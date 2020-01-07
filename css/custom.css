@@ -65,9 +65,11 @@ text-transform: uppercase;
 .main_wrapper{
    
 }
-.main_wrapper h1{
-    font-family: 'Gorditas', cursive;
-    color: #624657;
+.main_wrapper h1 {
+	font-family: 'Gorditas', cursive;
+	color: transparent;
+	background-image: linear-gradient(90deg, #d53d3d, #5f5fe6);
+	background-clip: text;
 }
 .main_wrapper .img img{
     width: 150px;
@@ -141,4 +143,22 @@ text-transform: uppercase;
   transform: rotate(3deg);
   right: 10px;
   left: auto;
+}
+.main_pg_heading{
+    position: relative;
+}
+.portfolio_holder {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    text-align: center;
+}
+.portfolio_holder .img_holder{
+    background:url("/img/b1.png") no-repeat fixed center
+}
+.portfolio_holder .img_holder img{
+    width: 150px;
+height: 150px;
+border-radius: 100%;
 }
